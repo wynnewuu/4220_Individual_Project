@@ -1,0 +1,39 @@
+Test Case 1: Open XY's BookStore --> Click Login --> Enter information --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and selects cancel, the program closes the LoginDialog window and return user to the MainWindow.
+
+Test Case 2: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: Please fill in all slots --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and immedietly selects OK with inputing any information, the program correctly tells the user 'Please fill in all slots'.
+
+Test Case 3: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: Please fill in all slots --> Click OK --> Click Cancel --> Return to main window
+Explain: When the user opens LoginDialog and immedietly selects OK only inputing a username, the program correctly tells the user 'Please fill in all slots'.
+
+Test Case 4: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: Please fill in all slots --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and immedietly selects OK and only input the password, the program correctly tells the user 'Please fill in all slots'.
+
+Test Case 5: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: A valid password needs to have at least six characters with both letters and numbers --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username but an invalid password (length < 6), the program correctly tells the user 'A valid password needs to have at least six characters with both letters and numbers'.
+
+Test Case 6: Flow: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: A valid password needs to have at least six characters with both letters and numbers --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username but an invalid password (length > 6 or does not conatin any letters), the program correctly tells the user 'A valid password needs to have at least six characters with both letters and numbers'.
+
+Test Case 7: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: A valid password needs to have at least six characters with both letters and numbers --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username but an invalid password (length > 5, does not start with a letter), the program correctly tells the user 'A valid password needs to have at least six characters with both letters and numbers'.
+
+Test Case 8:Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: A valid password needs to have at least six characters with both letters and numbers --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username but an invalid password (length > 5, contains a special character), the program correctly tells the user 'A valid password needs to have at least six characters with both letters and numbers'.
+
+Test Case 9:
+Flow: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: You could not be verified. Please try again. --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username and valid password, but the passoword is incorrect, the program correctly tells the user 'You could not be verified. Please try again'.
+
+Test Case 10:
+Flow: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: You could not be verified. Please try again. --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username and valid password, but the username is incorrect, the program correctly tells the user 'You could not be verified. Please try again'.
+
+Test Case 11:
+Flow: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: You could not be verified. Please try again. --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username and valid password, but they do not have an account, the program correctly tells the user 'You could not be verified. Please try again'.
+
+Test Case 12:
+Flow: Open XY's BookStore --> Click Login --> Enter information --> Click OK --> MessageBox: You are logged in as User # --> Click OK --> Click Cancel --> Return to main window
+Explain: User opens LoginDialog and enters a valid username (dclark) and valid password (dc1234), and they do have an account, the program correctly tells the user 'You are logged in as User #*'.
